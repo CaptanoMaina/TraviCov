@@ -1,0 +1,164 @@
+.footer{
+    width:100%;
+    background: #d9a694;
+    display:flex;
+    color:#050a30;
+    font-family:'Montserrat', sans-serif ;
+    justify-content: space-around;
+  }
+
+  .footer-items{
+  box-sizing: border-box;
+  
+  }
+  .fabout{
+      width: 30%;
+  }
+
+  .flinks{
+      width: 15%;
+  }
+  .fcontact{
+      width: 20%;
+  }
+  .footer h1{
+  padding: 10px 0;
+  font-size: 25px;
+  color:#050a30;
+  }
+  .footer-items p{
+    color: #050a30;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 30px;
+  }
+  .footer h2{
+    margin:10px 0;
+    color: #050a30;
+    font-size: 25px;
+  
+  }
+   .border{
+    height: 2px;
+    width: 40px;
+    background:white;
+  }
+  .footer ul{
+    list-style: none;
+    font-size: 15px;
+    color: #050a30;
+    letter-spacing: 0.5px;
+    width: 350px;
+  }
+  .footer ul a{
+    text-decoration: none;
+    outline: none;
+    color: #050a30;
+    transition: 0.3s;
+  }
+  .footer ul a:hover{
+    color: white;
+  
+  }
+  .footer ul li{
+    margin:10px 0;
+    height:25px;
+  }
+  .footer li i{
+    margin-right: 20px;
+  }
+  .social-media{
+    width:100%;
+    text-align: center;
+    color: #050a30;
+  }
+  
+  .social-media a {
+    text-decoration: none;
+  
+  
+  }
+  .social-media i{
+    height: 35px;
+    width: 35px;
+    margin: 20px 5px;
+    padding: 10px;
+    color:white;
+    border-radius: 50%;
+    border:1px solid  grey;
+    transition: 0.3s;
+  
+  }
+  .social-media i:hover{
+  background: grey;
+  }
+  .footer-bottom{
+    padding:10px;
+    color:white;
+    background: #d9a694;
+    font-size: 12px;
+    
+  }
+  @media screen and (max-width:600px){
+    .footer-items{
+        width: 100%;
+    }
+    
+    nav {
+      flex-wrap: wrap;
+    }
+    
+    nav li {
+      z-index: 1;
+    }
+    
+    nav ul {
+      flex-wrap: wrap;
+      padding: 0px;
+    }
+    
+    .sub {
+      position:relative;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      background-color: grey;
+    }
+    
+    .middle-container {
+      background-size: 100%;
+      height: 100%;
+    }
+  
+    .body-container {
+      flex-wrap: wrap;
+      height: max-content;
+    }
+  
+    .writings {
+      height: max-content;
+    }
+  
+  .popup {
+      flex-wrap: wrap;
+      opacity: 1;
+      height: max-content;
+    }
+  
+    .popupwrite {
+      height: 100%
+    }
+    
+    .left, .right {
+      display: none;
+    }
+    
+    .adv, .diff {
+      width: 400px;
+      height: 100%;
+    }
+    
+    .one, .two, .three, .four, .five, .six,.seven, .eight, .nine, .ten, .eleven {
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+  }

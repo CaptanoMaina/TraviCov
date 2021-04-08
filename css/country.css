@@ -1,0 +1,116 @@
+body {
+    display: grid;
+}
+
+h1, h2, h3 {
+    font-family:'Georgia', serif ;
+    
+}
+
+.body-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #f4f6fc;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 2px #f4f6fc;
+    margin-bottom: 25px
+}
+
+.body-container .chart {
+    width: 95%;
+}
+
+.restrictions_title{
+    font-size: 250%;
+    text-align: center;
+}
+
+.covid_title {
+    font-size: 250%;
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+}
+
+.filters label {
+    margin-left: 15px;
+    margin-right: 15px;
+    align-self: center;
+}
+
+.filters select{
+    width: auto;
+}
+
+.airline_container, .travel_container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.airline_post {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #d9a694;
+    padding: 5px;
+    font-family: 'Montserrat';
+    font-size: 1em;
+    color: #050a30;
+}
+
+.airline_post h3, .airline_post h4, .travel_post h3 {
+    margin: 5px 0px;
+    text-align: center;
+}
+
+.airline_post p, .travel_post p {
+    margin: 10px;
+}
+
+.airline_post a {
+    align-self: center;
+}
+
+.travel_post {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #f4f6fc;
+}
+
+.travel_post div {
+    align-self: center;
+}
+
+.info br {
+    margin: 10px 0px;
+}
+
+.travel_post .info {
+    text-align: justify;
+    font-family: 'Montserrat';
+    line-height: 30px;
+    font-size: 1em;
+    color: #050a30;
+}
+
+.map {
+    width: 80%;
+    justify-self: center;
+
+}

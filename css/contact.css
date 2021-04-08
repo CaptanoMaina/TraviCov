@@ -1,0 +1,142 @@
+body{
+    display: grid;
+    font-family:'Montserrat', sans-serif ;
+}
+
+.nyumbani{
+    background-color: #f3f4f6;
+}
+
+
+.form_description{
+    font-family: Georgia, serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+#name, #email {
+    font-family:'Montserrat', sans-serif ;
+    font-size: 100%;
+    letter-spacing: .1em;
+    width: 430px;
+    height: 26px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.lbl{
+    font-family:'Montserrat', sans-serif ;
+    font-size: 100%;
+}
+
+#message{
+    font-family:'Montserrat', sans-serif ;
+    font-size: 100%;
+    letter-spacing: .1em;
+    width: 430px;
+    height: 260px;
+    border-radius: 5px;
+
+}
+
+#sbmit{
+    background-color: #050a30;
+    color: #ffffff;
+    border-radius: 5px;
+    background: #050a30;
+    font-size: 16px;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 9px 25px;
+    border-width: 0;
+    font-family:'Montserrat', sans-serif ;
+    font-size: 100%;
+    margin-left: 335px;
+
+}
+
+.form-items{
+    padding-bottom: 30px;
+    height: 100%;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+.middle-container {
+    display: flex;
+    justify-content: center;
+}
+
+.body-container{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: space-around;
+}
+
+.writings{
+    width: 85%;
+    margin-top: 25px;
+    margin-bottom: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+}
+
+.bk{
+    background-size: cover;
+}
+
+.writings .contacts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.loc {
+    width: 35%;
+    margin: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #d9a694;
+    color: #050a30;
+}
+
+
+/*adjusting elements to fit in a mobile phone screen */
+@media only screen and (max-width: 500px){
+    .bk{
+        background-size: cover;
+    }
+    .body-container{
+        width: 0px;
+        flex-direction: column;
+    }
+    .writings{
+        width: 400px;
+        padding-right: 0px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+    #name{
+        width: 300px;
+    }
+    #message{
+        width: 300px;
+        height: 200px;
+    }
+    #sbmit{
+        margin-left: 0px;
+    }
+
+    a{
+        width: 130px;
+    }
+}

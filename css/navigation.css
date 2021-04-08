@@ -1,0 +1,70 @@
+body{
+    margin: 0px;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+.navtext{
+  align-self: center;
+}
+
+li a{
+    color: black;
+    background: white;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    background:transparent;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    transition: background 0.4s;
+    font-size: 15px;
+   
+  }
+    
+  li a:hover{
+    background-color: #d9a694;
+  }
+  
+  /*
+  .logo{
+    height: 50px;
+  }*/
+  
+  nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px; 
+    width: 45%;   
+  }
+  
+  nav li{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  
+  .sin:hover .sub {
+    display: flex;
+    top: 0px;
+  }
+  
+  
+  
+  .sub {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0px;
+  }

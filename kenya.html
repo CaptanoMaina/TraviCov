@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="title" content="Travicov">
+    <meta name="description" content="Get all the important travel information and Covid updates">
+    <meta name="author" content="Ciku Maina">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/country.css">
+    <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <a class="log" href="index.html">
+          <img class="logo" src="images/L.gif" alt="logo">
+        </a>
+
+          <ul class="navtext">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="sin"><a>Countries</a>
+
+                <ul class="sub">
+                    <li><a href="kenya.html">Kenya</a></li>
+                    <li><a href="mauritius.html">Mauritius</a></li>
+                    <li><a href="uk.html">United Kingdom</a></li>
+
+                </ul>
+
+            </li>
+            <li><a href="contact.html">Contact </a></li>
+          </ul>
+
+
+
+      </nav>
+
+<div class="body-container" data-iso3="KEN">
+        <h1 class="covid_title">Covid19 Stats</h1>
+        <div class="filters">
+            <label for="covid_select">Filters:</label>
+            <select id="covid_select">
+                <option value="new_cases" data-color="#d9a694">New Cases</option>
+                <option value="total_cases" data-color="#d9a694">Total Cases</option>
+                <option value="new_deaths" data-color="#d9a694">New Deaths</option>
+                <option value="total_deaths" data-color="#d9a694">Total Deaths</option>
+                <option value="positive_rate" data-color="#d9a694">Positive Rate</option>
+
+            </select>
+        </div>
+        <div class="chart">
+            <canvas id="covid_canvas"></canvas>
+        </div>
+    </div>
+
+    <div class="body-container" data-iso3="KEN">
+        <h2 class="restrictions_title">Airline Information <br> & <br> Travel Restrictions</h2>
+        <div class=filters>
+            <label for="topic_select">Filters:</label>
+            <select id="topic_select">
+                <option value="travel_restrictions">Travel Restrictions</option>
+                <option value="airline_information">Airline Information</option>
+            </select>
+            <label id="airline_label" for="airline_select" hidden>Airlines:</label>
+            <select id="airline_select" hidden>
+                <option value="all">All</option>
+            </select>
+        </div>
+        <div class=travel_container style="display: none">
+        </div>
+        <div class=airline_container style="display: none">
+        </div>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8171118.3723060675!2d33.409983678067704!3d0.1540843327377215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182780d08350900f%3A0x403b0eb0a1976dd9!2sKenya!5e0!3m2!1sen!2ske!4v1617915412126!5m2!1sen!2ske" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="footer">
+
+            <div class="footer-items fabout">
+
+                <h2>ABOUT TraviCov</h2>
+                <p>Travicov is a website that provides information to people interested in travelling to Mauritius, The United Kingdom(UK) and Kenya.  Due to the Coronavirus  pandemic, there has been a lot of travel restrictions. Travicov will provide information regarding the current COVID 19 situation, the current active cases,recovered cases and the reported deaths. Users will also have access to the travel requirements, different airline restrictions, quarantine guidelines , approved COVID 19 testing centres and certificates. </p>
+            </div>
+            <div class="footer-items flinks">
+                <h2>QUICK LINKS</h2>
+                <div class="border"></div>
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="about.html">
+                        <li>About Us</li>
+                    </a>
+                    <a href="country.html">
+                        <li>Countries</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+
+                </ul>
+            </div>
+
+
+
+        <div class="footer-items fcontact">
+
+            <h2>CONTACT US</h2>
+            <div class="border"></div>
+            <ul>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Beau Plan,Mauritius</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i>+23054434951</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i>info@alueducation.com</li>
+            </ul>
+            <div class="social-media">
+                <a><i class="fa fa-facebook" aria-hidden="true"> </i></a>
+                <a><i class="fa fa-twitter" aria-hidden="true"> </i></a>
+                <a><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        Copyright &copy; ALU 2020. All rights reserved.
+
+    </div>
+
+    </div>
+    <script type="text/javascript" src="js/chart.min.js"></script>
+    <script type="text/javascript" src="js/restrictions_info.js"></script>
+    <script type="text/javascript" src="js/covid_info.js"></script>
+</body>
+
+
+
+</html>
